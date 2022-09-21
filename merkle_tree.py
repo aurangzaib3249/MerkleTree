@@ -46,7 +46,7 @@ class MerkleTree:
         else:
             return right.hash
         
-    # merkle tree with Binary search tree also mainten hash of node where we inserting
+    # merkle tree with Binary search tree also maintain hash of node where we are inserting the node
     def merkle_tree_insert(self,temp,val):
         if temp==None:
             self.root1=Node(None,None,val,Node.get_hash(val))
@@ -118,7 +118,7 @@ class MerkleTree:
         self.print_nodes(node.right)
     
     
-list=["5","3","1"]
+list=["5","3","1","10","4"]
 MerkleTree(list)
 
         
